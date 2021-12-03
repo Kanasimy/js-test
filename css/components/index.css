@@ -169,18 +169,32 @@
 	font-weight: 700;
 	line-height: 1.16;
 	position: relative;
+	cursor: pointer;
 }
 
 .widget__title::after {
-	content: "";
+	content: '';
 	position: absolute;
 	width: 20px;
 	height: 20px;
+	right: 1px;
+	top: 0;
 	background-image: url(../../img/chevron-up.svg);
-	right: 0;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: initial;
+}
+
+.widget__title--active::after {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+}
+
+.widget__body--hidden {
+	display: none;
 }
 
 /* location */

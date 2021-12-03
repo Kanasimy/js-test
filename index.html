@@ -188,7 +188,7 @@
 					</button>
 				</main>
 				<aside class="sidebar">
-					<form action="#">
+					<form class="form" action="#">
 						<div class="widget">
 							<div class="widget__title">Близость к метро</div>
 							<div class="widget__body">
@@ -197,7 +197,7 @@
 										<input type="checkbox" id="location-01" checked class="location__checkbox">
 										<label class="location__btn" for="location-01">&lt; 10</label>
 
-										<input type="checkbox" id="location-02" checked class="location__checkbox">
+										<input type="checkbox" id="location-02" class="location__checkbox">
 										<label class="location__btn" for="location-02">10-20</label>
 
 										<input type="checkbox" id="location-03" class="location__checkbox">
@@ -278,25 +278,24 @@
 									<span class="checkbox__title">Малоэтажный</span>
 								</label>
 
-								<div class="widget-hidden">
-									<label class="checkbox">
-										<input type="checkbox" class="checkbox__real" name="Value-06">
-										<span class="checkbox__fake"></span>
-										<span class="checkbox__title">Есть парковка для машин</span>
-									</label>
+								<label class="checkbox widget-hidden">
+									<input type="checkbox" class="checkbox__real" name="Value-06">
+									<span class="checkbox__fake"></span>
+									<span class="checkbox__title">Есть парковка для машин</span>
+								</label>
 
-									<label class="checkbox">
-										<input type="checkbox" class="checkbox__real" name="Value-07">
-										<span class="checkbox__fake"></span>
-										<span class="checkbox__title">Есть детская площадка</span>
-									</label>
+								<label class="checkbox widget-hidden">
+									<input type="checkbox" class="checkbox__real" name="Value-07">
+									<span class="checkbox__fake"></span>
+									<span class="checkbox__title">Есть детская площадка</span>
+								</label>
 
-									<label class="checkbox">
-										<input type="checkbox" class="checkbox__real" name="Value-08">
-										<span class="checkbox__fake"></span>
-										<span class="checkbox__title">Магазин в доме</span>
-									</label>
-								</div>
+								<label class="checkbox widget-hidden">
+									<input type="checkbox" class="checkbox__real" name="Value-08">
+									<span class="checkbox__fake"></span>
+									<span class="checkbox__title">Магазин в доме</span>
+								</label>
+
 
 								<button class="widget-show-hidden">Показать ещё</button>
 							</div>
@@ -318,7 +317,7 @@
 							<div class="widget__body">
 
 								<button class="form-btn form-btn--submit">Применить фильтры</button>
-								<button class="form-btn">
+								<button class="form-btn btn-reset">
 									<img src="img/x.svg" alt="Сбросить">
 									Сбросить фильтры</button>
 
@@ -329,6 +328,6 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/main.js"></script>
+	<script src="js/index.js" type="module"></script>
 </body>
 </html>
